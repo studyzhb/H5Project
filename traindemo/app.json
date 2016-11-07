@@ -1,0 +1,33 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/train/train",
+    "pages/logs/logs",
+    "pages/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "12306查票试用版",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#0dc441",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_light.png"
+      },
+      {
+        "pagePath": "pages/train/train",
+        "text": "查票",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search_light.png"
+      }
+    ]
+  }
+}

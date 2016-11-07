@@ -1,0 +1,44 @@
+<!--<button type="default" bindtap="actionSheetTap">弹出action sheet</button>
+<action-sheet hidden="{{actionSheetHidden}}" bindchange="actionSheetChange">
+  <block wx:for="{{actionSheetItems}}">
+    <action-sheet-item class="item" bindtap="bindItemTap" data-name="{{item}}">{{item}}</action-sheet-item>
+  </block>
+  <action-sheet-cancel class="cancel">取消</action-sheet-cancel>
+</action-sheet>
+ <label>出发地</label><input type="text" placeholder="请输入出发地" name="start" />
+    <label>目的地</label><input type="text" placeholder="请输入目的地" name="end" />
+    <button class="btn-area" formType="submit">
+      查询
+    </button>
+-->
+<view class="container-vertical">
+  <form bindsubmit="tijiao">
+    <view class="section">
+      <!--<view class="section__title">出发地</view>-->
+      <picker bindchange="bindPickerChange" value="{{index}}" range="{{arrStation}}">
+        <view class="picker">
+          出发地：<input type="text" placeholder="请输入出发地" name="start" value="{{arrStation[index]}}" />
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <!--<view class="section__title">出发地</view>-->
+      <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{arrStation}}">
+        <view class="picker">
+          目的地：<input type="text" placeholder="请输入出发地" name="start" value="{{arrStation[index1]}}" />
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <view class="section__title">日期选择器</view>
+      <picker mode="date" value="{{selectDate}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+        <view class="picker">
+          当前选择: {{selectDate}}
+        </view>
+      </picker>
+    </view>
+    <button class="btn-area" formType="submit">
+      查询
+    </button>
+  </form>
+</view>

@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>捕鱼</title>
+<meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1.0,initial-scale=1.0,user-scalable=no" />
+<meta name="keywords" content="">
+<meta name="description" content="">
+<!--<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>-->
+ <script type="text/javascript" src="js/zepto.js"></script> 
+ <script type="text/javascript" src="js/touch.min.js" ></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+
+</head>
+<body>
+<div id="tanchu"></div>
+<div id="gameover">
+	<img src='images/gameover.png' style="left:0;top:0;"/>
+	<img id="restart" src='images/continue.png'style="left:0;bottom:0;"/>
+</div>
+<audio src='music/bg.mp3' loop autoplay></audio>
+<audio src='music/coin.mp3' id='coinMusic' ></audio>
+	<div class="out">
+		<div id='wraper'>
+		</div>
+			<img class="bg" src="images/game_bg_2_hd.jpg">
+		<div class="controlArea">
+			<div class="num num1"></div>
+			<div class="num num2"></div>
+			<div class="num num3"></div>
+			<div class="num num4"></div>
+			<div class="num num5"></div>
+			<div class="num num6"></div>
+			<div class="left"></div>
+			<div class="cannon"></div>
+			<div class="right"></div>
+			<div class="level"></div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/game.js"></script>
+<script type="text/javascript">
+	var isClick=true;
+	function bodyScale(){
+		var devicewidth=document.documentElement.clientWidth;
+		var scale=devicewidth/768;
+		document.body.style.zoom=scale;
+	}	
+	$(document).on('touchmove',function(e){
+		//console.log(e.changedTouches[0]);
+		e.preventDefault();
+	})
+	window.onload=window.onresize=function(){
+		bodyScale();
+		game.start();
+	}
+
+</script>
+</html>

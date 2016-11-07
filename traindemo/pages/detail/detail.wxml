@@ -1,0 +1,62 @@
+
+<view class="top">
+    <text class="start">{{startandend.start}}</text>
+    <text>到</text>
+    <text class="end">{{startandend.end}}</text>
+</view>
+<view class="top1">{{selectDate}}</view>
+<view></view>
+<view class="row" wx:for="{{arrInfo}}">
+    <view>
+        <view class="col-md-4">
+            <view class="checi hi">{{item.station_train_code}}</view>
+            <view class="hi start">{{item.start_time}}</view>
+            <view class="hi end">{{item.arrive_time}}</view>
+        </view>
+        <view class="col-md-4">
+            <view class="hi intime">{{item.lishi}}</view>
+            <view class="hi start1">{{item.start_station_name}}</view>
+            <view class="hi end1">{{item.to_station_name}}</view>
+        </view>
+        <view class="col-md-4">
+            <view class="hi money">详情</view>
+            <view class="hi zuowei">座位</view>
+            <view class="hi pnum" wx:if="{{item.yz_num!='无'&&item.yz_num!='--'}}">{{item.yz_num}}张</view>
+            <view class="hi pnum" wx:else>0张</view>
+        </view>
+    </view>
+    <!--<view>
+        <view class="col-md-4">
+            <view class="checi hi">Content</view>
+            <view class="hi start">Content</view>
+            <view class="hi end">Content</view>
+        </view>
+        <view class="col-md-4">
+            <view class="hi intime">12时3分</view>
+            <view class="hi start1">焦作</view>
+            <view class="hi end1">济南</view>
+        </view>
+        <view class="col-md-4">
+            <view class="hi money">20.5</view>
+            <view class="hi zuowei">硬座</view>
+            <view class="hi pnum">300张</view>
+        </view>
+    </view>
+    <view>
+        <view class="col-md-4">
+            <view class="checi hi">Content</view>
+            <view class="hi start">Content</view>
+            <view class="hi end">Content</view>
+        </view>
+        <view class="col-md-4">
+            <view class="hi intime">12时3分</view>
+            <view class="hi start1">焦作</view>
+            <view class="hi end1">济南</view>
+        </view>
+        <view class="col-md-4">
+            <view class="hi money">20.5</view>
+            <view class="hi zuowei">硬座</view>
+            <view class="hi pnum">300张</view>
+        </view>
+    </view>-->
+</view>

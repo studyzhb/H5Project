@@ -1,0 +1,132 @@
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	width: 100%;
+	height: 100%;
+	
+}
+#wraper{
+	width:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:10;
+}
+.bg{
+	display: block;
+	border: 0;
+	width:768px;
+	height:100%;
+}
+.out{
+	position: relative;
+	width:768px;
+	height:100%;
+	overflow: hidden;	
+}
+.controlArea{
+	position: absolute;
+	width: 100%;
+	height: 72px;
+	left:0;
+	bottom:0;
+	background: url(../images/bottom.png) no-repeat 0 0; 
+}
+.cannon{
+	width:55px;
+	height:79px;
+	position: absolute;
+	bottom:0;
+	z-index: 10;
+	left:51.5%;
+	background: url(../images/dapao.png) no-repeat 0 0;
+}
+.left{
+	width:36px;
+	height:28px;
+	position: absolute;
+	bottom:5px;
+	left:44%;
+	background: url(../images/bottom.png) no-repeat -135px -74px;
+}
+.controlArea .activeLeft{
+	background: url(../images/bottom.png) no-repeat -91px -74px;
+}
+.right{
+	width:36px;
+	height:28px;
+	position: absolute;
+	bottom:5px;
+	left:62%;
+	background: url(../images/bottom.png) no-repeat -47px -74px;
+}
+.controlArea .activeRight{
+	background: url(../images/bottom.png) no-repeat -3px -74px;
+}
+.num{
+	width:13px;
+	height:18px;
+	position: absolute;
+	top:48px;
+	transition:all 1s linear;
+}
+.num1{
+	background: url(../images/number_black.png) -3px -220px;
+	left:3%;
+}
+.num2{
+	background: url(../images/number_black.png) -3px -220px;
+	left:6%;
+}
+.num3{
+	background: url(../images/number_black.png) -3px -220px;
+	left:9%;
+}
+.num4{
+	background: url(../images/number_black.png) -3px -220px;
+	left:12%;
+}
+.num5{
+	background: url(../images/number_black.png) -3px -220px;
+	left:15%;
+}
+.num6{
+	background: url(../images/number_black.png) -3px -220px;
+	left:18%;
+}
+
+.level{
+	width:213px;
+	height:19px;
+	background: url(../images/energy-bar.png) no-repeat;
+	position: absolute;
+	top:44px;
+	left:70.7%;
+}
+#tanchu{
+	position:absolute;
+	width:100%;
+	height:100%;
+	z-index:999;
+	background: #000;
+	opacity: 0.5;
+	display:none;
+}
+#gameover{
+	position:absolute;
+	z-index:1000;
+	width:309px;
+	height:300px;
+	left:50%;
+	display:none;
+	top:50%;
+	margin-left:-155px;
+	margin-top:-150px;
+}
+#gameover img{
+	position:absolute;
+	width:100%;
+}
+.fishes{position:absolute;left:0;background-repeat: no-repeat;}
