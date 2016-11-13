@@ -79,7 +79,6 @@ var classCompre=function(){
 				return _instances;
 			}
 		}
-
 	};
 
 	return {
